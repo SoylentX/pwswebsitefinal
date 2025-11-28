@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Vragenlijst - Anticonceptie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Vragenlijst</h1>
+    <p>Vul hieronder je gegevens en klachten in. Meerdere antwoorden zijn mogelijk.</p>
+  </header>
+
+  <main>
+    <form id="quizForm" class="card">
+
+      <label>Leeftijd:
+        <input type="number" id="age" min="12" max="60" required>
+      </label>
+
+      <label>Rook je?
+        <select id="smoke">
+          <option value="nee">Nee</option>
+          <option value="ja">Ja</option>
+        </select>
+      </label>
+
+      <h2>PMS & Menstruatieklachten</h2>
+      <p>Welke klachten ervaart u? (meerdere antwoorden mogelijk)</p>
+      <div class="checkbox-group klachten">
+        <label><input type="checkbox" value="Stemmingswisselingen"> Stemmingswisselingen</label>
+        <label><input type="checkbox" value="Depressieve gevoelens"> Depressieve gevoelens</label>
+        <label><input type="checkbox" value="Prikkelbaarheid"> Prikkelbaarheid</label>
+        <label><input type="checkbox" value="Migraine met aura"> Migraine met aura</label>
+        <label><input type="checkbox" value="Migraine zonder aura"> Migraine zonder aura</label>
+        <label><input type="checkbox" value="Zware menstruatie"> Zware menstruatie</label>
+        <label><input type="checkbox" value="Pijnlijke menstruatie"> Pijnlijke menstruatie</label>
+        <label><input type="checkbox" value="Acne"> Acne</label>
+        <label><input type="checkbox" value="Gewichtstoename"> Gewichtstoename</label>
+        <label><input type="checkbox" value="Hoofdpijn"> Hoofdpijn</label>
+        <label><input type="checkbox" value="Onregelmatige bloeding"> Onregelmatige bloeding</label>
+        <label><input type="checkbox" value="Geen klachten"> Geen van bovenstaande</label>
+      </div>
+
+      <h2>Medische geschiedenis</h2>
+      <p>Heeft u ooit een van de volgende aandoeningen gehad? (meerdere antwoorden mogelijk)</p>
+      <div class="checkbox-group aandoeningen">
+        <label><input type="checkbox" value="Trombose"> Trombose / longembolie</label>
+        <label><input type="checkbox" value="Bloedstolsels"> Bloedstolsels in benen of longen</label>
+        <label><input type="checkbox" value="Hoge bloeddruk"> Hoge bloeddruk</label>
+        <label><input type="checkbox" value="Hart- en vaatziekten"> Hart- en vaatziekten</label>
+        <label><input type="checkbox" value="Hartaanval"> Hartaanval, beroerte, etc.</label>
+        <label><input type="checkbox" value="Leverziekte"> Leverziekte (hepatitis, cirrose, etc.)</label>
+        <label><input type="checkbox" value="Borstkanker"> Borstkanker in familie</label>
+        <label><input type="checkbox" value="Diabetes"> Diabetes met complicaties</label>
+        <label><input type="checkbox" value="Geen aandoeningen"> Geen van bovenstaande</label>
+      </div>
+
+      <button type="submit" class="btn">Bekijk advies</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
